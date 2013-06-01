@@ -1,6 +1,9 @@
 Hookah::Application.routes.draw do
   
 
+  resources :users
+
+
   resources :slots
 
 
@@ -8,9 +11,6 @@ Hookah::Application.routes.draw do
 
 
   resources :products
-
-
-  resources :users
 
 
   # The priority is based upon order of creation:
