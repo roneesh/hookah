@@ -20,8 +20,12 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :password_digest %><br />
-    <%= f.text_field :password_digest %>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
   </div>
   <div class="field">
     <%= f.label :street1 %><br />
@@ -41,7 +45,7 @@
   </div>
   <div class="field">
     <%= f.label :zipcode %><br />
-    <%= f.number_field :zipcode %>
+    <%= f.text_field :zipcode %>
   </div>
   <div class="actions">
     <%= f.submit %>
