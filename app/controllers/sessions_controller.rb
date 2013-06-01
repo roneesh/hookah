@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to user_url(@user.id), notice: 'Welcome back.'
     else
       flash[:message] = "Invalid login e-mail or password"
-      redirect_to userlogin_url
+      redirect_to sessions_new_url
     end
   end
 

@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  
+  before_filter :ensure_logged_in, :except => 'new'
+  # before_filter :ensure_correct_user_id, only: [:show, :edit, :destroy]
+
   # GET /users
   # GET /users.json
   def index
